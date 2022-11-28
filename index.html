@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p id="print"></p>
+    <div class="container" name="read">
+        <div class="heading">CASIO</div>
+        <div class="justinputs">
+            <input id="input" type="text" placeholder="8888888888">
+            <input id="enter" type="text" placeholder="888888888888888">
+            <div class="myBtns" onclick="run()">
+                <button class="onbutton">ON</button>
+                <button class="offbutton" >OFF</button>
+            </div>
+        </div>
+        <div class="btns">
+            <button class="theyall signs" id=  "plus"   onclick="Evaluator('+')">+</button>
+            <button class=" theyall signs" id = "times"  onclick="Evaluator('*')">×</button>
+            <button class="theyall signs" id = "minus"  onclick="Evaluator('-')">-</button>
+            <button class="theyall signs" id = "division" onclick="Evaluator('/')">÷</button>
+            <button class="theyall"  onclick="Evaluator('9')">9</button>
+            <button class="theyall"  onclick="Evaluator('8')">8</button>
+            <button class="theyall"  onclick="Evaluator('7')">7</button>
+            <button class="theyall" onclick="Evaluator('6')">6</button>
+            <button class="theyall" onclick="Evaluator('5')">5</button>
+            <button class="theyall" onclick="Evaluator('4')">4</button>
+            <button class="theyall" onclick="Evaluator('3')">3</button>
+            <button class="theyall" onclick="Evaluator('2')">2</button>
+            <button class="theyall"  onclick="Evaluator('1')">1</button>
+            <button class="theyall" onclick="Evaluator('0')">0</button>
+            <button class="theyall"  onclick="Evaluator('.')">.</button>
+            <button class="theyall sign" id = 'equal' onclick="Evaluator('=')">=</button>
+            <button class="theyall sgn"  id = "ac" onclick="Evaluator('c')">AC</button>
+            <button class = "theyall delete" id = "space"onclick="backSpace('')">DEL</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
